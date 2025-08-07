@@ -1,0 +1,8 @@
+# This is the configuration file for Cloudflare Pages
+
+name = "VOLSE-MCQ"
+compatibility_date = "2025-08-07"
+
+# This line tells Cloudflare that this is a Pages project and
+# the static files are in the root directory.
+pages_build_output_dir = "."
