@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Exam Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section id="start-screen" class="screen active">
+            <h1 class="title">MCQ Exam Platform</h1>
+            <p class="subtitle">Enter your name to begin the assessment.</p>
+            <input type="text" id="username" placeholder="Your Full Name" autocomplete="name" class="input-field">
+            <button id="start-btn" class="btn btn-primary">Start Exam</button>
+        </section>
+
+        <section id="quiz-container" class="screen">
+            <header class="quiz-header">
+                <h1 id="quiz-user-greeting">All the best!</h1>
+            </header>
+            <form id="quiz-form">
+                </form>
+            <button type="submit" form="quiz-form" id="submit-btn" class="btn btn-primary">Submit Answers</button>
+        </section>
+
+        <section id="results-container" class="screen">
+            <div id="results-content">
+                <h1 class="title">Your Results</h1>
+                <p id="score-display"></p>
+                <h2 class="subtitle">Review of Incorrect Answers</h2>
+                <div id="incorrect-answers-list">
+                    </div>
+            </div>
+            <div class="results-actions">
+                 <button id="download-txt-btn" class="btn btn-secondary">Download .txt</button>
+                 <button id="download-pdf-btn" class="btn btn-success">Download .pdf</button>
+                 <button id="restart-btn" class="btn btn-danger">Take Again</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
