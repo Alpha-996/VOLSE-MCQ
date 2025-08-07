@@ -1,6 +1,6 @@
 # This is the configuration file for Cloudflare Pages
 
-name = "VOLSE-MCQ"
+name = "volse-mcq"
 compatibility_date = "2025-08-07"
 
 # This line tells Cloudflare that this is a Pages project and
